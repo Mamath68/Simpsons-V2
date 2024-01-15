@@ -1,0 +1,201 @@
+/* ********************GENERAL*********************** */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: gold;
+}
+
+#container {
+    width: 80%;
+    margin: auto;
+}
+
+/* ********************HEADER*********************** */
+.pinaise {
+    background-color: #00bbf0;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    padding: 5px 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+
+/* ********************MAIN*********************** */
+section {
+    background-color: white;
+    padding: 1em;
+    display: flex;
+}
+
+.blue {
+    background-color: #00bbf0;
+}
+
+nav ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    flex: 1 0 auto;
+    text-align: center;
+    padding: 1em;
+}
+
+nav ul li {
+    align-self: center;
+}
+
+.nolink {
+    color: black;
+    text-decoration: underline;
+}
+
+.nolink2 {
+    color: white;
+    text-decoration: underline;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    color: goldenrod;
+    padding-bottom: 1em;
+    font-size: 30px;
+}
+
+article {
+    width: 60%;
+    flex: 1 0 auto;
+    padding: 0 1em;
+    text-align: justify;
+}
+
+.texte {
+    justify-content: center;
+}
+
+aside {
+    background-color: #00bbf0;
+    color: white;
+    width: 22%;
+    padding: 1em;
+    text-align: center;
+}
+
+aside p {
+    text-align: justify;
+}
+
+h3 {
+    padding: 0 1em 0 0;
+}
+
+.matt {
+    width: 176px;
+}
+
+.aligne {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 0.5em 1em;
+}
+
+.simov {
+    width: 245px;
+}
+
+.metier{
+    text-align: center;
+    font-size: small;
+    padding: 0 0 1em 0;
+} 
+
+/* ********************FOOTER*********************** */
+footer {
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
+
+/* ***********************Média query****************************** */
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 767px) {
+    /* Styles */
+
+    #container {
+        width: 100%;
+    }
+
+    section {
+        flex-direction: column;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    article {
+        width: 100%;
+        padding-bottom: 1em;
+        padding-top: 1em;
+    }
+
+    aside {
+        width: 100%;
+    }
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    /* Styles */
+
+    #container {
+        width: 100%;
+    }
+
+    section {
+        flex-direction: column;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    article {
+        width: 100%;
+        padding-bottom: 1em;
+        padding-top: 1em;
+    }
+
+    aside {
+        width: 100%;
+    }
+}
